@@ -1,0 +1,66 @@
+$logo-color: hsl(0, 0%, 11%);
+$main-color: hsl(0, 0%, 15%);
+$hover-color: hsl(0, 0%, 19%);
+$text-color: rgb(189, 189, 189);
+$text-hover: white;
+.Navbar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    background-color: $main-color;
+
+    .logo {
+        position: relative;
+        top: 0;
+        
+        height: 4rem;
+
+        background-color: $logo-color;
+
+        text-align: center;
+
+        p { 
+            position: relative;
+            top: 1rem;
+
+            font-size: 2em;
+            background-color: transparent;
+
+            color: white;
+        }
+       
+    }
+
+    ul, li {
+        width: 100%;
+
+        position: relative;
+        list-style: none;
+
+        font-size: 1.2em;
+        font-weight: 600;
+        color: $text-color;
+
+        height: 4.5rem;
+    }
+
+    li:hover {
+        border-right: solid 4px white;
+        background-color: $hover-color;
+        color: $text-hover;
+    }
+
+    li {
+        .menu-item {
+            position: relative;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+            margin-left: 1rem;
+        }
+    }
+
+
+}
