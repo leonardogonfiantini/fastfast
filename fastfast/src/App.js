@@ -6,7 +6,7 @@ import {
   Route,
 } from "react-router-dom";
 
-import Home from "./views/home/Home";
+import Panel from "./views/Panel/Panel";
 import Pilots from "./views/Pilots/Pilots";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     <div className="App">
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Panel />} />
         <Route path="pilots" element={<Pilots />} />
       </Routes>
     </BrowserRouter>
