@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import {
   BrowserRouter,
@@ -12,12 +12,12 @@ import Pilots from "./views/Pilots/Pilots";
 function App() {
   return (
     <div className="App">
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Panel />} />
-        <Route path="pilots" element={<Pilots />} />
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Panel />} />
+          <Route path="pilots" element={<Pilots />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
