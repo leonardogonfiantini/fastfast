@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import useLocalStorage from 'use-local-storage'
 
 import './Panel_style.scss'
@@ -18,7 +18,6 @@ import Live from '../Live/Live';
 
 function Panel() {
 
-
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
   const [themeIcon, setThemeIcon] = useState<JSX.Element>();
@@ -28,6 +27,10 @@ function Panel() {
       theme === 'light' ? setThemeIcon(<IoMdSunny/>) : setThemeIcon(<IoMdMoon/>);
       setTheme(newTheme);
   }
+
+  useEffect(() => {
+    theme === 'dark' ? setThemeIcon(<IoMdSunny/>) : setThemeIcon(<IoMdMoon/>);
+  }, [theme])
 
 
   const [activeComponent, setActiveComponent] = useState<JSX.Element>();
