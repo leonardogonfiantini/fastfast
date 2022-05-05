@@ -1,0 +1,22 @@
+:root {
+    --background: white;
+    --text-primary: black;
+    --text-secondary: royalblue;
+    --bar-color: purple;
+    --logo-color: black;
+
+
+    --button-theme-text: white;
+    --button-theme-background: hsl(290, 50%, 38%);
+
+}
+
+[data-theme='dark'] {
+    --background: black;
+    --text-primary: white;
+    --text-secondary: grey;
+    --logo-color: darkred;
+
+    --button-theme-text: black;
+    --button-theme-background: hsl(54, 57%, 51%);
+}
