@@ -1,0 +1,24 @@
+:root {
+    --background: white;
+    --text-primary: hsl(0, 85%, 51%);
+    --text-secondary: hsl(0, 67%, 55%);
+    
+    --bar-color: hsl(0, 0%, 89%);
+    --logo-color: hsl(0, 0%, 87%);
+    
+    --button-theme-text: white;
+    --button-theme-background: hsl(290, 50%, 33%);
+
+}
+
+[data-theme='dark'] {
+    --background: hsl(0, 0%, 15%);
+    --text-primary: white;
+    --text-secondary: rgb(189, 189, 189);
+
+    --bar-color: hsl(0, 0%, 12%);
+    --logo-color: hsl(0, 0%, 10%);
+
+    --button-theme-text: black;
+    --button-theme-background: hsl(46, 75%, 51%);
+}
