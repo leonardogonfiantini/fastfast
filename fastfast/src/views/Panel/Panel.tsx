@@ -3,6 +3,8 @@ import useLocalStorage from 'use-local-storage'
 
 import './Panel_style.scss'
 
+import Logo from './logo.png';
+
 import { HiHome } from 'react-icons/hi';
 import { HiUserGroup } from 'react-icons/hi';
 import { IoIosPodium } from 'react-icons/io';
@@ -75,7 +77,7 @@ function Panel() {
 
       <div className="navbar">
         <div className="Navbar">
-            <div className="logo"> <p> FFast </p> </div>
+            <div className="logo"> <img src={Logo} alt="Logo" /> </div>
 
             <ul>
               <li> 
