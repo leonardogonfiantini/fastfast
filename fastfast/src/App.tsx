@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 
 import Panel from "./views/Panel/Panel";
-import Pilots from "./views/Pilots/Pilots";
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Panel />} />
-          <Route path="pilots" element={<Pilots />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -10,10 +10,10 @@ import { RiLiveFill } from 'react-icons/ri';
 import { IoMdSunny } from 'react-icons/io';
 import { IoMdMoon } from 'react-icons/io';
 
-import Pilots from '../Pilots/Pilots';
-import Home from '../Home/Home';
-import Stats from '../Stats/Stats';
-import Live from '../Live/Live';
+import Pilots from '../../components/Pilots/Pilots';
+import Home from '../../components/Home/Home';
+import Stats from '../../components//Stats/Stats';
+import Live from '../../components/Live/Live';
 
 
 function Panel() {
