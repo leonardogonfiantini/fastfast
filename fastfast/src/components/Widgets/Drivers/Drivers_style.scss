@@ -1,0 +1,17 @@
+.Drivers {
+    position: relative;
+    left: 2rem;
+    top: 0.5rem;
+    
+    width: 20rem;
+    height: max-content;
+    
+    background-color: var(--logo-color);
+    color: var(--text-primary);
+    border-radius: 0.3rem;
+
+    h2 {
+        text-align: center;
+        padding: 1rem;
+    }
+}
