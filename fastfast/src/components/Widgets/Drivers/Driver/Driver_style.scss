@@ -22,13 +22,14 @@
         font-size: 1.3em;
         font-weight: 600;
 
-        background-color: red;
+        color: var(--text-primary);
+        background-color: transparent;
 
     }
 
     .Country {
         position: absolute;
-        left: 3.5rem;
+        left: 4rem;
 
         width: 3rem;
         height: 3rem;
@@ -36,12 +37,16 @@
 
     .ShortName {
         position: absolute;
-        left: 8rem;
+        left: 9rem;
 
         text-align: center;
         line-height: 3rem;
 
         font-size: 1.3em;
         font-weight: 600;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
