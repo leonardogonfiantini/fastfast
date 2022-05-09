@@ -38,7 +38,7 @@ function DriversBar() {
     if (ready === true) {
       let copy: JSX.Element[] = [];
       for (let i = 0; i < drivers.length; i++)
-        copy = [...copy, <Driver key={i} Number = {drivers[i]['permanentNumber']} ShortName = {drivers[i]['code']} />];
+        copy = [...copy, <Driver key={i} Number = {drivers[i]['permanentNumber']} Country = {drivers[i]['nationality']} ShortName = {drivers[i]['code']} />];
 
       setDriverRow([...driverRow, ...copy])
 
